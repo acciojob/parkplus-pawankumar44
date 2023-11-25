@@ -12,4 +12,9 @@ public class ParkingLot {
     private String address;
     @OneToMany(mappedBy = "parkingLot")
     List<Spot> spotList;
+
+    public ParkingLot(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
 }
